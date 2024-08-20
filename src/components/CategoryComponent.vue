@@ -19,6 +19,7 @@
               height="180"
               @click="toggle"
               flat
+              
             >
               <v-row>
                 <v-col cols="12" sm="12">
@@ -30,6 +31,7 @@
                           max-height="80"
                           max-width="80"
                           contain
+                          @click="category(categories)"
                         ></v-img>
                       </div>
                       <v-list-item-subtitle
@@ -63,6 +65,19 @@ export default {
       { img: "laptop.png", title: "Laptops" },
     ],
   }),
+  methods:{
+    category(categories) {
+    
+
+    // Redirect to the checkout page with the product details
+    this.$router.push({ 
+      name: 'AppleMobile', 
+      params: { 
+        components:categories
+      } 
+    });
+  },
+  }
 };
 </script>
 

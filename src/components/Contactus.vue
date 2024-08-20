@@ -1,7 +1,10 @@
 <template class="mt-16">
     <div>
-        <h1 class="" style="margin-top: 80px; margin-bottom: 0px;">Contact <span style="color: orangered;">Us</span></h1>
-      <v-sheet class="mx-auto mt-16" max-width="400">
+      <div style="display: flex; justify-content: center;">
+    <h1 style="margin-top: 80px; margin-bottom: 0px; text-align: center;">
+        Contact <span style="color: orangered;">Us</span>
+    </h1>
+</div>      <v-sheet class="mx-auto mt-16" max-width="400">
         <v-form @submit.prevent ref="form">
           <v-text-field v-model="userData.name" class="text-black" label="Name" append-inner-icon="mdi-account"
             variant="outlined" color="blue" :counter="20" :rules="dataValidationRules.name" required>

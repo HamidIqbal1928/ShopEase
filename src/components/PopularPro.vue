@@ -73,7 +73,7 @@ export default {
     this.$router.push({ 
       name: 'CheckoutPage', 
       params: { 
-        product: productDetails 
+        product: productDetails
       } 
     });
   },

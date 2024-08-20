@@ -2,7 +2,9 @@
  <v-app>
   <v-main>
     <v-col cols="12" sm="12" class="mt-16">
-      <h2 class="mb-4">Popular Products</h2>
+      <v-toolbar flat color="transparent">
+            <v-toolbar-title class="text-h4" id="title"> Papoular Products  </v-toolbar-title>
+      </v-toolbar>
       <PopularPro/>
     </v-col>
   </v-main>
@@ -17,3 +19,12 @@ export default{
   }
 }
 </script>
+<style>
+#title {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  font-size: x-large;
+  color: rgb(199, 103, 68);
+  font-weight: 900;
+  text-align: center;
+}</style>
