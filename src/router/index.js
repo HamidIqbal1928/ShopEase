@@ -1,11 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CheckoutPage from '@/components/CheckoutPage.vue'; // Adjust path as needed
 
+
+ 
 const routes = [
   {
     path: '/',
     name: 'HomeView',
     component: HomeView
+  },
+  {
+    path: '/checkout',
+    name: 'CheckoutPage',
+    component: CheckoutPage,
+    props: true
   },
   {
     path: '/product',

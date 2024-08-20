@@ -29,7 +29,7 @@
 
            <div class="btn">
              <v-btn class="mb-2 cart" style="background-color: orange ;">Add cart</v-btn>
-            <v-btn class="mb-2 buy" style="background-color: orange ">Buy Now</v-btn>
+            <v-btn class="mb-2 buy" style="background-color: orange "  @click="buyNow(product)">Buy Now</v-btn>
           </div>
           </v-col>
         </v-row>
@@ -53,6 +53,9 @@ export default {
       { img: "RN63.png", title: "Realme Narzo 63", subtitle: "Narzo 63", price: "Price: $200", bpm: 1, },
     ],
   }),
+  
+  
+
   methods: {
     increment(product) {
       product.bpm++;
@@ -61,8 +64,19 @@ export default {
       if (product.bpm > 0) {
         product.bpm--;
       }
-    }
+    },
+    buyNow(product) {
+    // const userDetails = this.user;
+    const productDetails = product;
 
+    // Redirect to the checkout page with the product details
+    this.$router.push({ 
+      name: 'CheckoutPage', 
+      params: { 
+        product: productDetails 
+      } 
+    });
+  },
   },
 };
 </script>
