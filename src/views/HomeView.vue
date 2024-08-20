@@ -49,7 +49,7 @@
           <CategoryComponent />
           </v-col>
           <v-toolbar flat color="transparent">
-            <v-toolbar-title class="text-h4" id="title"> Popular Mobiles Top Campanies  </v-toolbar-title>
+            <v-toolbar-title class="text-h4" id="title"> Top Mobiles Campanies  </v-toolbar-title>
          
 
             <!-- <v-spacer></v-spacer>

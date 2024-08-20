@@ -150,7 +150,8 @@ export default {
     font-size: medium !important; /* Increase font size for mobile */
   }
   .btn{
-    margin-left: 3rem;
+    flex: 1 0 45;
+    margin-left: 1rem;
   }
  
 }
