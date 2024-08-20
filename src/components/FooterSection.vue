@@ -33,30 +33,30 @@
           <v-card-text class="white--text pt-0">
             <h3 class="heading">A<span style="color: orange">bou</span>t</h3>
           </v-card-text>
-          <v-card-text class="grey--text"> How it Work</v-card-text>
-          <v-card-text class="grey--text mt-n4"> Our Programs </v-card-text>
-          <v-card-text class="grey--text mt-n4"> Promotions </v-card-text>
-          <v-card-text class="grey--text mt-n4"> Refer A Friend </v-card-text>
+          <v-card-text class="grey--text"> How it <span style="color: orange">Work</span> </v-card-text>
+          <v-card-text class="grey--text mt-n4"> Our <span style="color: orange">Programs</span>  </v-card-text>
+          <v-card-text class="grey--text mt-n4"> Pro<span style="color: orange">motion</span>s </v-card-text>
+          <v-card-text class="grey--text mt-n4"> Refer A <span style="color: orange">Friend</span>  </v-card-text>
         </v-col>
         <v-col cols="12" xs="12" sm="6" md="2">
           <v-card-text class="white--text pt-0">
             <h3 class="heading">De<span style="color: orange">live</span>ry</h3>
           </v-card-text>
-          <v-card-text class="grey--text"> Cost of Delevery </v-card-text>
-          <v-card-text class="grey--text mt-n4"> Payment Method </v-card-text>
-          <v-card-text class="grey--text mt-n4"> Delevery Astus </v-card-text>
-          <v-card-text class="grey--text mt-n4"> Returns </v-card-text>
+          <v-card-text class="grey--text"> Cost of <span style="color: orange">delivery</span> </v-card-text>
+          <v-card-text class="grey--text mt-n4"> Payment<span style="color: orange">Method</span>  </v-card-text>
+          <v-card-text class="grey--text mt-n4"> Delivery<span style="color: orange">Status</span>  </v-card-text>
+          <v-card-text class="grey--text mt-n4"> <span style="color: orange">Returns</span> </v-card-text>
         </v-col>
         <v-col cols="12" xs="12" sm="6" md="4">
           <v-card-text class="white--text pt-0">
             <h3 class="heading">Contact <span style="color: orange">Us</span></h3>
           </v-card-text>
-          <v-card-text class="grey--text "> Vehari,Punjab,Pakistan. </v-card-text>
-          <v-card-text class="grey--text mt-n4"> hamid313500@gmail.com </v-card-text>
+          <v-card-text class="grey--text "> Vehari,Punjab,<span style="color: orange">Pakistan</span> </v-card-text>
+          <v-card-text class="mt-n4" style="color: orange">hamid313500@gmail.com </v-card-text>
           <v-card-text class="grey--text mt-n4">
-            +92 319-7286163
+            +92 319-<span style="color: orange">7286163</span>
           </v-card-text>
-          <v-card-text class="grey--text mt-n4"> +92 321-9326163 </v-card-text>
+          <v-card-text class="grey--text mt-n4"> +92 321-<span style="color: orange">9326163</span> </v-card-text>
         </v-col>
       </v-row>
       <div class="copy">

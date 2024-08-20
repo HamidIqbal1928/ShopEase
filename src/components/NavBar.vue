@@ -68,7 +68,7 @@
           </v-menu> -->
         </div>
       </v-app-bar>
-      <router-view />
+      <!-- <router-view /> -->
     
       <FooterSection/>
     </v-app>

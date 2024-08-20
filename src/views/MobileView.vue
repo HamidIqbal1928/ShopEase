@@ -80,7 +80,7 @@
     
       </v-list-item-group>
     </v-navigation-drawer>
-      <!-- <router-view></router-view> -->
+
   </v-app>
 </template>
 

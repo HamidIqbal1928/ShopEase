@@ -62,6 +62,7 @@
           <v-toolbar flat color="transparent">
             <v-toolbar-title class="text-h4" id="title"> Other Latest Devices  </v-toolbar-title>
 
+            
             <!-- <v-spacer></v-spacer>
             <v-btn icon="mdi mdi-chevron-left"></v-btn>
             <v-btn icon="mdi mdi-chevron-right"></v-btn> -->
