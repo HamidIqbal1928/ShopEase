@@ -10,14 +10,15 @@
           v-for="(cetegory, i) in categories"
           :key="i"
         >
-          <v-item v-slot="{ active, toggle }">
+          <v-item v-slot="{ active}">
             <v-card
               id="card"
               :color="active ? '#D5F0DB' : 'white'"
               :class="['d-flex', 'align-center', 'rounded-lg', 'mx-2', active ? 'borderme' : 'borderout']"
               dark
               height="180"
-              @click="toggle"
+              
+               @click="category(categories)"
               flat
               
             >

@@ -24,10 +24,10 @@
 
               <div class="btn">
                 <v-btn class="mx-2 mt-n3 small-btn bordered-btn" fab dark small color="black">
-                  <v-icon dark>mdi-shopping</v-icon>
+                  <v-icon dark  @click="buyNow(product)">mdi-shopping</v-icon>
                 </v-btn>
                 <v-btn class="mx-2 mt-n3 small-btn bordered-btn" fab dark small color="black">
-                  <v-icon dark>mdi-heart</v-icon>
+                  <v-icon dark  @click="buyNow(product)">mdi-heart</v-icon>
                 </v-btn>
               </div>
             </v-card-actions>
@@ -63,7 +63,19 @@ export default {
       if (product.bpm > 0) {
         product.bpm--;
       }
-    }
+    },
+    buyNow(product) {
+    // const userDetails = this.user;
+    const productDetails = product;
+
+    // Redirect to the checkout page with the product details
+    this.$router.push({ 
+      name: 'CheckoutPage', 
+      params: { 
+        product: productDetails
+      } 
+    });
+  },
 
   },
 };

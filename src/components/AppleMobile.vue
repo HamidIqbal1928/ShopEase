@@ -24,10 +24,10 @@
 
               <div class="btn">
                 <v-btn class="mx-2 mt-n3 small-btn bordered-btn" fab dark small color="black">
-                  <v-icon dark>mdi-shopping</v-icon>
+                  <v-icon dark  @click="buyNow(product)">mdi-shopping</v-icon>
                 </v-btn>
                 <v-btn class="mx-2 mt-n3 small-btn bordered-btn" fab dark small color="black">
-                  <v-icon dark>mdi-heart</v-icon>
+                  <v-icon dark  @click="buyNow(product)">mdi-heart</v-icon>
                 </v-btn>
               </div>
             </v-card-actions>
@@ -58,7 +58,12 @@ export default {
       { img: "w2.png", title: "Smart Watches", subtitle: "1pc-20pc ", price: "Price: $52",bpm:1 },
       { img: "w3.png", title: "Smart Watches", subtitle: "1pc-20pc ", price: "Price: $52",bpm:1 },
       { img: "w4.png", title: "Smart Watches", subtitle: "1pc-20pc ", price: "Price: $52",bpm:1 },
-
+      
+      { img: "charger.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
+      { img: "c2.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
+      { img: "c3.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
+      { img: "c4.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
+      
       { img: "tablet.png", title: "Latest Tablet", subtitle: "ipad,sumsung,Android", price: "Price: $1400",bpm:1 },
       { img: "t2.png", title: "Latest Tablet", subtitle: "ipad,sumsung,Android", price: "Price: $1400",bpm:1 },
       { img: "t3.png", title: "Latest Tablet", subtitle: "ipad,sumsung,Android", price: "Price: $1400",bpm:1 },
@@ -69,10 +74,6 @@ export default {
       { img: "l2.png", title: "Sumsung Laptop", subtitle: "1kpc-5pc", price: "Price: $10",bpm:1 },
       { img: "l3.png", title: "Sumsung Laptop", subtitle: "1kpc-5pc", price: "Price: $10",bpm:1 },
 
-    { img: "charger.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
-    { img: "c2.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
-    { img: "c3.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
-    { img: "c4.png", title: "chargers", subtitle: "1c-50pc", price: "Price: $10",bpm:1 },
 
     ],
   }),
@@ -84,7 +85,19 @@ export default {
       if (product.bpm > 0) {
         product.bpm--;
       }
-    }
+    },
+    buyNow(product) {
+    // const userDetails = this.user;
+    const productDetails = product;
+
+    // Redirect to the checkout page with the product details
+    this.$router.push({ 
+      name: 'CheckoutPage', 
+      params: { 
+        product: productDetails
+      } 
+    });
+  },
 
   },
 };

@@ -17,8 +17,9 @@ const routes = [
     component: CheckoutPage,
     props: true
   },
+  
   {
-    path: '/applemobile',
+    path: '/product2',
     name: 'AppleMobile',
     component: AppleMobile,
     props: true
