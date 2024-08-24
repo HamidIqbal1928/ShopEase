@@ -1,10 +1,6 @@
 <template>
   <v-app>
     <v-app-bar color="white" flat>
-      <!-- <v-badge color="#D5F0DB" dot>
-        <v-img class="ml-5" src="1.png" contain width="30"></v-img>
-      </v-badge> -->
-  
       <v-toolbar-title class="ml-4">
         <h3>Shop<span style="color:orangered">Ease</span></h3>
       </v-toolbar-title>
