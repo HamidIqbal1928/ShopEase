@@ -9,7 +9,7 @@
   
       <div class="navbar">
         <v-btn style="color:orangered" to="/">Home</v-btn> |
-        <v-btn style="color:orangered" to="/product">Products</v-btn> |
+        <v-btn style="color:orangered" to="/services">Services</v-btn> |
         <v-btn style="color:orangered" to="/bundle">Bundles</v-btn> |
         <v-btn style="color:orangered" to="/contact">Contact Us</v-btn>
       </div>

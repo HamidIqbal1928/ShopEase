@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="image-swapper">
     <div class="big-image-container">
       <img :src="currentImage.src" alt="Big Image" class="big-image" />

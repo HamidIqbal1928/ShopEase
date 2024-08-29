@@ -25,7 +25,7 @@ const routes = [
     props: true
   },
   {
-    path: '/product',
+    path: '/services',
     name: 'AboutView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

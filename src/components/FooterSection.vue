@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless class="footer">
+  <v-footer dark padless class="footer" id="container">
     <v-card flat tile class="black white--text py-12 px-5 footer " width="100%">
       <v-row>
         <v-col cols="12" xs="12" sm="6" md="4" class="pa-16">
@@ -104,4 +104,11 @@ export default {
 .grey--text {
   color: gray !important;
 }
+@media (max-width: 600px) {
+#container{
+  height: auto;
+  width: auto;
+}
+}  
+
 </style>

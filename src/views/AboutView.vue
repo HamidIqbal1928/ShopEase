@@ -3,19 +3,21 @@
   <v-main>
     <v-col cols="12" sm="12" class="mt-16">
       <v-toolbar flat color="transparent">
-            <v-toolbar-title class="text-h4" id="title"> Papoular Products  </v-toolbar-title>
+            <v-toolbar-title class="text-h4" id="title"> Our Services  </v-toolbar-title>
       </v-toolbar>
-      <PopularPro/>
+      <ServicesComp/>
     </v-col>
   </v-main>
  </v-app>
 </template>
 <script>
-import PopularPro from '@/components/PopularPro.vue'
+// import PopularPro from '@/components/PopularPro.vue'
+import ServicesComp from '@/components/servicesComp.vue';
+// import Services from '@/components/servicesComp.vue';
 export default{
   name:"AboutView",
   components:{
-    PopularPro,
+    ServicesComp,
   }
 }
 </script>
